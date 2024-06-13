@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:  sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    text-align: center;
+    overflow-y: hidden;
+}
+header{
+    width: 100%;
+    height: 110px;
+    background: #162fa0;
+    font-size: 15px;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+}
+
+header img{
+    position: absolute;
+    height: 95px;
+    width: 110px;
+    margin-left: -50%;
+    margin-top: -5.7%;
+    background: transparent;
+}
+
+.headerTitles{
+    margin-top: 1.5%;
+    margin-left: -.5%;
+}
+
+.headerTitles h1{
+    font-size: 130%;
+    color: white;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 125px;
+    
+}
+
+.headerTitles h2{
+    font-size: 120%;
+    color: white;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 125px;
+    font-weight: 100;
+    
+}
+
+.headerTitles h3{
+    font-size: 95%;
+    color: white;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 125px;
+    font-weight: 100;
+    
+}
+.datetime{
+    position: relative;
+}
+
+.time {
+    margin-left: 50%;
+    font-size: 3em;
+    color: white;
+}
+  
+.date {
+    margin-top: 12px;
+    margin-left: 50%;
+    font-size: 1.60em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.video video{
+    width: 730px;
+    height: 450px;
+    border: 2px solid black;
+    background-color: #162fa0;
+}
+
+.OSDS{
+    border: 2px solid black;
+    width: 780px;
+    height: 450px;
+    background: white;
+    opacity: 80%;
+}
+
+.OSDS h3{
+    text-align: center;
+    background-color: #162fa0;
+    color: white;
+    font-size: 25px;
+}
+
+.CID{
+    margin-left: 0.5%;
+    border: 2px solid black;
+    width: 730px;
+    height: 275px;
+    background: white;
+    opacity: 80%;
+}
+
+.CID h3{
+    text-align: center;
+    background-color: #162fa0;
+    color: white;
+    font-size: 25px;
+}
+
+.SGOD{
+    border: 2px solid black;
+    width: 780px;
+    height: 275px;
+    background: white;
+    opacity: 80%;
+}
+.SGOD h3{
+    text-align: center;
+    background-color: #162fa0;
+    color: white;
+    font-size: 25px;
+}
+
+table{
+    font-size: 15px;
+    margin-top: 0px;
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse; 
+}
+
+table tr:nth-child(even) {
+    background-color: lightgray; 
+}
+
+ table tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+table tr {
+    text-align: left;
+    border: 2px solid black; 
+}
+
+table tr th{
+    height: 30px;
+    background: #162fa0;
+    color: white;
+    font-style: italic;
+    border: 2px solid black;
+    top: 0px;
+    position: sticky;
+    text-align: center;
+}
+
+table tr td{
+    height: 37.4px;
+    line-height: 35px;
+    font-size: 15px;
+    padding: 0px 0px 0px 12px;
+    border: 2px solid black;  
+}
+
+.proceed{
+    width: 5%;
+}
+
+.name_of_visitors{
+    width: 20%;
+}
+
+.department{
+    width: 12%;
+    font-weight: bold;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.table-cid{
+    width: 100%;
+    font-size: 15px;
+}
+
+.table-cid tr td{
+    height: 42.5px;
+    font-size: 24px;
+}
+
+.table-sgod{
+    width: 100%;
+    font-size: 15px;
+}
+
+.table-sgod tr td{
+    height: 42.5px;
+    font-size: 24px;
+}
+
+/* SCREEN FOR TV */
+@media only screen and (min-width:1280px) {
+    header{
+        height: 150px;
+    }
+
+    header img{
+        width: 150px;
+        height: 130px;
+        margin-left: -49.7%;
+    }
+
+    .headerTitles{
+        margin-left: 2%;
+    }
+    
+    .headerTitles h1{
+        margin-top: -110px;
+        font-size: 30px;
+    }
+    
+    .headerTitles h2{
+        margin-top: -113px;
+        font-size: 21px;
+        font-weight: 400;
+    }
+    
+    .headerTitles h3 {
+        margin-top: -113px;
+        font-size: 21px;
+        font-weight: 350;
+    }
+    .datetime{
+        top: 10%;
+    }
+    .time{
+        font-size: 4.5em;
+    }
+    
+    .date{
+        margin-left: 50.7%;
+        font-weight: 500;
+        font-size: 2em;
+    }
+    
+    .container{
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-left: 0.5%;
+    }
+    .video video{
+        width: 955px;
+        height: 550px;
+    }
+    .OSDS{
+        width: 925px;
+        height: 550px;
+    }
+    .CID{
+        margin-top: -5px;
+        margin-left: -1px;
+        width: 955px;
+        height: 345px;
+    }
+    .SGOD{
+        margin-top: -5px;
+        width: 925px;
+        height: 345px;
+    }
+    table tr td{
+        height: 47px;
+        line-height: 35px;
+        font-size: 18px;
+        padding: 0px 0px 0px 12px;
+        border: 2px solid black;  
+    }
+    .table-cid tr td{
+        height: 55px;
+        font-size: 30px;
+    }
+    .table-sgod tr td{
+        height: 55px;
+        font-size: 30px;
+    }
+}

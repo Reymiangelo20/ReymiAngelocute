@@ -1,0 +1,12 @@
+version: "2"
+authtoken: 2O2AyZ17b1GVIuiifbDAB3SDqwl_5JdX4ekx6jh8FFWReMcsy
+tunnels:
+  sample1:
+    proto: http
+    addr: 80
+  sample2:
+    proto: http
+    addr: 8080
+  elogsheet:
+    proto: http
+    addr: 8013

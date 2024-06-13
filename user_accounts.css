@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'bookman old style';
+}
+
+header {
+    background-color: #162fa0;
+    padding: 10px;
+    text-align: center;
+    height: 30%;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+    margin-top: 10px;
+}
+
+table {
+    margin-bottom: 150px;
+    margin-left: 60px;
+    width: 100%;
+    border-collapse: collapse; /* Combine border spacing into one */
+    border: 2px solid black;
+}
+/* Table header */
+th {
+  
+    text-align: center;
+    background-color: #162fa0;
+    color: white;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure the header appears above the table content */
+    border: 2px solid black;
+}
+
+
+/* Table cells */
+td {
+    border: 2px solid black;
+    padding: 4px;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 12px;
+}
+#monitoringTable th {
+    position: sticky;
+    top: 0;
+    background-color: #162fa0;
+    
+}
+.scroll{
+    overflow-y: scroll;
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 92%;
+    height: 450px; 
+}
+.container{
+    top: 16%;
+    height: 84%;
+    width: 300px;
+    position: absolute;
+    background:#162fa0;
+    border: black;
+    z-index: 4;
+    transition: 0.5 ease;
+    transform: translate(-300px);
+    opacity: 95%;
+}
+
+   .container .head{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+input{
+    -webkit-appearance: none;
+}
+ ol{
+    width: 100%;
+    list-style: none;
+    text-align: left;
+ }
+
+ ol li{
+    display: block;
+    width: 100%;
+    text-align: left;
+ }
+
+ ol li a{
+    color: white;
+    padding: 30px 0px 0px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    transition: 0.2s;
+    overflow: hidden;
+    text-transform: capitalize;
+ } 
+
+ ol li a i{
+    width: 45px;
+    font-size: 30px;
+    padding-left: 5px;
+ }
+
+ ol li:hover a{
+    background:#162fa0;;
+    color: white;
+    letter-spacing: 1px;
+ }
+ 
+ span{
+    top: 3%;
+    position: absolute;
+    right: -46px;
+    font-size: 28px;
+    border-radius: 3px;
+    color: white;
+    padding: 3px 8px;
+    background: #162fa0;
+  
+ }  
+
+ 
+
+ #bars{
+    background: #162fa0;
+ }
+ #check:checked ~ .container{
+    transform: translate(0);
+ }
+ #check:checked ~ .container #bars{
+  display: none;
+ }
+
+/* Remove the scroll from the table */
+
+/* Ensure the table takes 100% width */
+#monitoringTable {
+    width: 88%;
+}
+
+/* NAV DROPDOWN LIST*/
+nav{
+    float: right;
+    margin-left: 80%;
+    padding-top: 110px;
+    position: absolute;
+    top: -1%;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+ul li a{
+    display: block;
+    padding: 15px 15px 25px 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    outline: 2px solid black;
+
+}
+
+ul li ul.dropdown li{
+     display: block;
+}
+ul li ul.dropdown{
+    font-size: 12px;
+    margin-left: 23%;
+    width: 80%;
+    background:#162fa0;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover{
+    background: rgb(0, 0, 0);
+}
+ul li:hover ul.dropdown{
+    display:block;
+}
+
+.dropdown li a{
+    padding: 15px 15px 25px 15px;
+    font-size: 15px;
+}
+/* NAV DROPDOWN LIST END*/
+
+
+
+/* Popup Add Animation*/
+
+.popup{
+    height: 290px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: grid;
+    transform: translate(-50%, -50%)scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s;
+    z-index: 999;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+.popup h2{
+    text-align: center;
+    font-size: 20px;
+    margin-left: -20px;
+    margin-top: -20px;
+    width: 540px;
+    height: 30px;
+    background-color: #162fa0;
+    color: white;
+    cursor: pointer;
+}
+
+.accountype{
+    margin-top: 15px;
+}
+.accountTypeLabel{
+    font-size: 17px;
+}
+.dropdownaccountType {
+    font-size: 17px;
+    border: 2px solid black;
+    margin-left: 25px;
+    width: 50%;
+}
+.accountname label{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 3%;
+}
+.accountname input{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 3%;
+    font-size: 17px;
+    border: 2px solid black;
+    width: 47%;
+}
+
+.userposition label{
+    font-size: 17px;;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 6%;
+}
+.userposition input{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 6%;
+    font-size: 17px;
+    border: 2px solid black;
+    width: 47%;
+}
+
+.useroffice label{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 9%;
+}
+.useroffice select{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 9%;
+    border: 2px solid black;
+    font-size: 17px;
+    width: 48%;
+}
+
+.depedemail label{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 16%;
+}
+
+.depedemail input{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 16%;
+    font-size: 17px;;
+    border: 2px solid black;
+    width: 47%;
+}
+
+.accountpass label{
+    font-size: 17px;
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 23%;
+}
+
+.accountpass input{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 23%;
+    font-size: 17px;
+    border: 2px solid black;
+    width: 47%;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 23vh;
+}
+
+.Register{
+  height: 30px;
+  width: 70px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid black;
+  background: #162fa0;
+  color: white;
+  font-size: 15px;
+}
+.Register:hover{
+    background: black;
+}
+.Close{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background: red;
+    color: white;
+    font-size: 15px;
+}
+.Close:hover{
+    background: black;
+}
+
+
+/* Popup Add Description END*/
+
+
+/* Popup Edit Animation*/
+
+.popup2{
+    height: 250px;
+    border: 3px solid black;
+    width: 500px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s;
+    z-index: 999;
+}
+.open-popup2{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+/* Popup Edit Animation*/
+
+
+
+/* Popup Edit Description*/
+.popup2 h2{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 30px;
+    width: 500px;
+    background-color: #162fa0;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+/* Popup Edit Dropdown*/
+.dropdownedit{
+    width: 300px;
+    height: 40px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.dropdownedit *{
+    box-sizing: border-box;
+}
+
+/* Popup Edit Dropdown END*/
+
+.User_Office{
+    margin-left: 25px;
+}
+
+.User_Office label{
+    font-size: 17px;
+    margin-left: 75px;
+    margin-top: 55px;
+
+}
+#OfficeSelect{
+    border: 2px solid black;
+    margin-left: 10%;
+    width: 40%;
+    padding: 1%;
+    font-size: 17px;
+}
+
+.User_Office input{
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 52px;
+    font-size: 17px;
+}
+
+.User_Position{
+    margin-left: 25px;
+}
+
+.User_Position label{
+    position: absolute;
+    font-size: 17px;
+    margin-left: 75px;
+    margin-top: 17px;
+
+}
+
+.User_Position input{
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 180px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.Center_Code{
+    margin-left: 25px;
+}
+
+.Center_Code label{
+    position: absolute;
+    font-size: 17px;
+    margin-left: 75px;
+    margin-top: 17px;
+
+}
+
+.Center_Code input{
+    border: 2px solid black;
+    width: 40%;
+    margin-left: 180px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.buttons2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+}
+
+.Save2{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background: #162fa0;
+    color: white;
+    font-size: 15px;
+}
+.Save2:hover{
+    background: black;
+}
+.Close2{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    background: red;
+    color: white;
+    font-size: 15px;
+}
+.Close2:hover{
+    background: black;
+}
+/* Popup Edit Description END*/
+
+
+
+
+
+/* Popup Delete Animation*/
+.popup3{
+    height: 250px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 500px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s;
+    z-index: 999;
+}
+.open-popup3{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+}
+/* Popup Delete Animation*/
+
+
+
+
+/* Delete Drescription*/
+.popup3 h2{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 40px;
+    width: 500px;
+    background-color: #162fa0;
+    color: white;
+    cursor: pointer;
+}
+.buttons3{
+    display: flex;
+    justify-content: space-between;
+}
+.Delete{
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 210px;
+    background: green;
+    color: white;
+}
+.Delete:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.Close3{
+    font-size: 20px;
+    height: 30px;
+    width: 70px;
+    margin-top: 70px;
+    margin-right: 30px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: 1px solid black;
+}
+.Close3:hover{
+    background: black;
+}
+
+
+
+
+/* Delete Dropdownlist*/
+.dropdowndelete{
+    width: 400px;
+    height: 50px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdowndelete *{
+    box-sizing: border-box;
+}
+
+.account{
+    margin-left: 30px;
+    margin-top: 12px;
+    font-size: 15px;
+    height: 10px;
+  
+}
+body {
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+.scroll {
+    scrollbar-width: none;
+}
+
+@media only screen and (min-width:1200px){
+    .container{
+        top: 19%;
+    }
+    .buttons{
+        margin-top: 25vh;
+    }
+    .scroll{
+        height: 380px;
+    }
+    ol li a{
+        font-size: 12px;
+     } 
+    
+     ol li a i{
+        font-size: 25px;
+     }
+}
+
+@media only screen and (min-width:1300px){
+    .container{
+        top: 17%;
+    }
+    .buttons{
+        margin-top: 25vh;
+    }
+    .scroll{
+        height: 390px;
+    }
+    ol li a{
+        font-size: 12px;
+     } 
+    
+     ol li a i{
+        font-size: 30px;
+     }
+}
+
+@media only screen and (min-width:1400px){
+    .container{
+        top: 16%;
+    }
+    .buttons{
+        margin-top: 23vh;
+    }
+    .scroll{
+        height: 400px;
+    }
+    ol li a{
+        font-size: 12px;
+     } 
+    
+     ol li a i{
+        font-size: 30px;
+     }
+}
+@media only screen and (min-width:1600px){
+    .container{
+        top: 12%;
+    }
+}
+
+

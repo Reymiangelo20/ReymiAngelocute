@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    position: absolute;
+    color: gold;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    margin-top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+}
+
+nav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #333;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    font-size: 15px;
+    color: white;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+table{
+    width: 86.2%;
+    height: 50%;
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin-left: 27.3vh;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+table tr th{
+    height: 50px;
+    background: black;
+    border: 1px solid gold;
+    position: sticky;
+    top: 0;
+}
+table tr td{
+    text-align: center;
+    border: 1px solid white;
+    width: 40%;
+    height: 50px;
+    font-size: 15px;
+}
+.link{
+    width: 20%;
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+    background: blue;
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.link a:hover{
+    background: darkblue;
+}
+.scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: 150px;
+    height: 300px;
+    margin-top: 200px;
+}
+
+
+#logoutBtn{
+    color: red;
+    font-weight: bolder;
+}
