@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bookman Old Style', serif;
+}
+
+header {
+    background-color: #162fa0;
+    padding: 10px;
+    text-align: center;
+    height: 20%;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Table */
+table {
+    width: 95%;
+    margin: 20px auto; 
+    max-height: 100%;
+    border-collapse: collapse; 
+    border: 2px solid black;
+    
+}
+
+.fullname {
+    width: 13%;
+}
+
+.sched {
+    width: 8%;
+}
+
+.next-button{
+    cursor: pointer;
+}
+/* Table header */
+th {
+    height: 2px;
+    text-align: center;
+    background-color: #162fa0;
+    color: white;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure the header appears above the table content */
+    border: 2px solid black;
+}
+
+
+/* Table cells */
+td {
+    border: 2px solid black;
+    padding: 4px;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 12px;
+}
+#monitoringTable th {
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+    background-color: #162fa0;
+    
+}
+
+.scroll{
+    overflow-y: scroll;
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 98%; 
+    height: 350px;
+    
+}
+
+#monitoringTable {
+    margin-top: 0px;
+    width: 100%;
+}
+
+.table-rownumber {
+    width: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.searchbtn {
+    margin-left: 80%;
+}
+
+.historylogs{
+    position: absolute;
+    right: 2%;
+    margin-top: -3%;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.historylogs:hover{
+    background-color: black; /* Change the background color on hover */
+}
+.settings{
+    position: absolute;
+    text-decoration: none;
+    margin-left: 80%;
+    margin-top: 3%;
+    
+}
+.adminBox {
+    display: inline-block;
+}
+.adminBox i {
+    color: #3498db;
+    margin-left: -2310px;
+    font-size: 70%;
+}
+.adminText {
+    display: inline-block;
+    vertical-align: left;
+    margin-left: -83%;
+    font-size: 50%;
+}
+.adminText span {
+    font-weight: bold; /* Optionally make the text bold */
+}
+.settings a{
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 15px;
+}
+.settings a:hover{
+    background-color: black;
+}
+
+.adminBox {
+    display: inline-block;
+}
+.adminBox i {
+    color: #3498db;
+    margin-left: -2310px;
+    font-size: 70%;
+}
+.adminText {
+    display: inline-block;
+    vertical-align: left;
+    margin-left: -83%;
+    font-size: 50%;
+}
+.adminText span {
+    font-weight: bold; /* Optionally make the text bold */
+}
+
+@media only screen and (min-width:1200px){
+    .settings{
+        margin-left: 76%;
+        margin-top: 2%;
+    }
+    .scroll{
+        height: 250px;
+    }
+    .historylogs{
+        margin-top: -4%;
+    }
+
+}
+
+@media only screen and (min-width:1300px){
+    .settings{
+        margin-left: 77%;
+    }
+    .scroll{
+        height: 300px;
+    }
+}
+@media only screen and (min-width:1400px){
+    .settings{
+        margin-left: 80%;
+        margin-top: 3%;
+    }
+    .scroll{
+        height: 350px;
+    }
+    .historylogs{
+        margin-top: -3%;
+    }
+}
+@media only screen and (min-width:1600px){
+   .historylogs{
+        margin-top: -2.5%;
+   }
+}

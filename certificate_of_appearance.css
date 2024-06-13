@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    font-family: 'Poppins';
+    position: relative; 
+    margin: 0;
+    padding: 0;
+    
+    }
+header{
+ font-weight: bold;
+ text-align: center;
+ font-size: 15px;
+}
+hr{
+    border: 0;
+    border-top: 3px solid #000; /* Change the color and thickness as needed */
+}
+h2 {
+    text-align: center;
+    font-size: 18px;
+ 
+   
+}
+
+#certificateBody {
+    width: 18cm; /* A4 width */
+    height: 25cm; /* A4 height */
+    margin:  auto;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+p:last-child {
+    margin-top: 20px;
+}
+.name{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.certify{
+    font-size: 15px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block; /* or inline, as needed */
+    text-align: center;
+}
+.purpose{
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: -2%;
+    margin-left: 2.5%;
+}
+
+.appear{
+    font-size: 14px;
+    margin-left: 2.5%;
+    margin-top: -22%;
+    
+}
+
+.scheduledate{
+    font-size: 15x;
+    font-weight: bolder;
+
+}
+.control_no{
+    margin-left: 2.5%;
+    font-size: 14px;
+}
+.seriesnumber{
+    margin-top: -15%;
+    width: 30%;
+    margin-left: 68%;
+    font-size: 14px;
+}
+.risNoDate{
+    border: none;
+    font-size: 15px;
+}
+.issued{
+
+    font-size: 14px;
+    
+}
+.position_office{
+    display: inline-flex;
+    text-align: center;
+    margin-left: 18.7%;
+    font-size: 15px;
+    
+}
+.position_office p{
+    margin-top: -50%;
+}
+
+.position_office .school_office{
+    margin-left: 100px;
+    font-size: 15px;
+}
+.best{
+    font-size: 15px;
+    
+}
+.bold-text{
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: auto; /* Change to auto to adjust the width automatically */
+    font-size: 15px;
+    text-align: center;
+    display: inline-block; /* Add this property */
+}
+header img {
+   
+    width: 50px;
+    height: auto;
+}
+
+.sign{
+    width: 200px;
+    margin-left: 8%;
+    top: 50%;
+}
+
+
+#btnPrint{
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+#backButton,
+#generatePDF {
+    padding: 10px 20px;
+    background-color: #162fa0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#generatePDF {
+    background-color: red;
+}

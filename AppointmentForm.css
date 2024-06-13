@@ -1,0 +1,264 @@
+@import url(https://db.onlinewebfonts.com/c/4267d8aa8711bb8c72cbefb26066c9e0?family=Bookman+Old+Style+V2);
+*{
+margin: 0;
+padding: 0;
+}
+body {
+  font-family: 'Bookman Old Style', serif;
+  background-image: url(deped.logo.jpg);
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Fillup Form */
+.container {
+  display: block;
+  border: 1px solid black;
+  width: 60%; 
+  max-width: 400px; 
+  height: 520px;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(89deg, #9aaaea 0%, #cbd9ff 50%, #f6f7ff 100%);
+  border-radius: 20px;
+  opacity: 95%;
+}
+
+.appointment-type{
+  display: flex;
+  margin-top: -0%;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.inner-box{
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+
+.inputPurpose {
+  width: 90%;
+  background: rgba(0, 0, 0, 0.089);
+  border: 1px solid #020202;
+  margin: 5px;
+  height: 35px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  outline: none;
+  background: #ffffff;
+  margin-top: 2%;
+  overflow-y: auto;
+  top: 0px;
+  line-height: 40px;
+}
+
+.inputPurpose::placeholder {
+  color: black;
+  font-size: 11px;
+  opacity: 0.7;
+}
+.input-box{
+  width: 90%;
+  background: rgba(0, 0, 0, 0.089);
+  border: 1px solid #020202;
+  margin-top: 5px;
+  height:  35px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  outline: none;
+  background: #ffffff;
+}
+ 
+
+button{
+  position: absolute;
+  width: 100%;
+  border: 1px solid black;
+  margin: 0px 0;
+  height: 32px;
+  border-radius: 5px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: right;
+  color: #131111;
+  cursor: pointer;
+}
+button:hover{
+  background: black;
+}
+#selectOffice {
+  margin-top: 5px;
+  height: 30px;
+  width: 90%; 
+}
+#gender{
+  position: absolute;
+  margin-top: 5px;
+  height: 30px;
+  width: 45%;
+}
+#priorityLane{
+  margin-top: 5px;
+  margin-left: -45%;
+  height: 30px;
+  width: 45%;
+}
+.submit-btn{
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 4%;
+  width: 55%;;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1;
+  background-color: #162fa0;
+  color: white;
+}
+
+h1{
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+h2{
+  margin-top: 10px;
+  font-size: 20px;
+}
+.currentDate{
+  margin-top: 10px;
+  width: 35%;
+  text-align: center;
+}
+li{
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 40%;
+  text-decoration: none;
+  display: flex;
+}
+li a {
+  left: 87%;
+  position: relative;
+  display: inline-block;
+  display: inline-flex;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+li a i {
+  font-size: 3rem;
+  position: absolute;
+  top: -200%;
+  left: 50%; /* Adjust the left position as needed */
+  transform: translateX(-50%); /* Center the icon horizontally */
+}
+li a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.developer{
+  margin-top: 40px;
+}
+.develops{
+  margin-left: -40vh;
+}
+.developer a:hover{
+  color: black;
+}
+@media only screen and (max-width:431px){
+  li{
+    display: none;
+  }
+
+  .container{
+    width: 370px;
+
+  }
+  .developer{
+    font-size: 12px;
+    margin-top: 6vh;
+    margin-left: 13px;
+  }
+  .inputPurpose::placeholder{
+      font-size: 10px;
+  }
+}
+@media only screen and (max-width:600px){
+  li{
+    display: none;
+  }
+
+  .container{
+    width: 370px;
+
+  }
+  .developer{
+    font-size: 12px;
+    margin-top: 6vh;
+    margin-left: 13px;
+  }
+  .inputPurpose::placeholder{
+      font-size: 10px;
+  }
+}
+@media only screen and (max-width:768px){
+  li{
+    display: none;
+  }
+
+  .container{
+    width: 370px;
+
+  }
+  .developer{
+    font-size: 12px;
+    margin-top: 6vh;
+    margin-left: 13px;
+  }
+  .inputPurpose::placeholder{
+      font-size: 10px;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .developer label{
+    margin-left: -75%;
+ }
+  li a{
+    left: 70%;
+ }
+}
+@media only screen and (min-width:1300px){
+  li a{
+    left: 70%;
+  }
+}
+@media only screen and (min-width:1400px){
+  li a{
+    left: 87%;
+  }
+}
+@media only screen and (min-width:1600px){
+  .developer{
+    margin-left: 2%;
+  }
+  .developer label{
+    margin-left: -70%;
+ }
+  li a{
+    left: 87%;
+  }
+}
